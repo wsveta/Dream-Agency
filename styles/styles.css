@@ -7,6 +7,9 @@
 body {
   color: var(--main-text-color);
   font-family: "Hind Vadodara", sans-serif;
+  background-image: url(../images/shape1.svg), url(../images/dotted-ellipse.svg), url(../images/shape2.svg);
+  background-repeat: no-repeat;
+  background-position: top 112px right 160px, top 202px right 166px, top 0px right 0px;
 }
 .container {
   padding: 0 50px;
@@ -46,12 +49,12 @@ body {
 }
 
 .logo {
-  left: 50%;
+  margin-left: 217px;
+  margin-right: auto;
   font-family: Playfair Display;
   font-size: 24px;
   font-weight: 700;
   letter-spacing: 0.24px;
-  margin: 0 auto;
 }
 .header-socials {
   display: flex;
@@ -61,17 +64,33 @@ body {
 }
 .hero-block {
   padding-bottom: 240px;
+  display: flex;
+  align-items: center;
+  gap: 96px;
 }
 .hero-title-bold {
+  display: inline-block;
   font-size: 87px;
   font-weight: 700;
-  line-height: 99.8%; /* 86.826px */
   letter-spacing: -0.87px;
   width: 498px;
+  margin-top: 0;
   margin-bottom: 27px;
 }
 .hero-title-regular {
   font-weight: 300;
+}
+
+.underline {
+  background-image: linear-gradient(
+    transparent 0,
+    transparent calc(50% - 25%),
+    var(--accent-color) calc(50% - 25%),
+    var(--accent-color) 100%
+  );
+  background-size: 100% 250%;
+  background-position: 0 0;
+  word-break: break-word;
 }
 .hero-text {
   color: var(--text-color);
@@ -95,13 +114,13 @@ body {
   letter-spacing: 0.34px;
   text-transform: uppercase;
 }
+
 .action-block {
   text-align: center;
   padding-bottom: 97px;
   margin-right: 107px;
-  background-color: #ECF7FF;
+  background-color: #ecf7ff;
   border-top-right-radius: 400px;
-
 }
 .action-title-bold {
   display: inline-block;
@@ -173,7 +192,16 @@ body {
   width: 275px;
 }
 .about-block {
-  padding-bottom: 269px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  background-image: url(../images/about-shape.svg), url(../images/about-dotted-ellipse.svg);
+  background-repeat: no-repeat;
+  background-position: top 210px left 60px, top 235px left 77px;
+}
+
+.about-block:hover {
+
 }
 .about-title-bold {
   font-size: 48px;
@@ -211,7 +239,7 @@ body {
 }
 .work-block {
   border-top-left-radius: 400px;
-  background-color: rgba(255, 222, 212, 0.30);
+  background-color: rgba(255, 222, 212, 0.3);
   margin-left: 174px;
   padding-bottom: 84px;
 }

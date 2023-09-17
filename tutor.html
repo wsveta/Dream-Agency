@@ -1,48 +1,219 @@
-  <style>
- .container {
-  padding: 0 50px;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+   <style>
+  .works {
+display: flex;
 }
-.header-block {
+.work {
+  
+  margin: 30px;
+  width: 419px;
+  padding: 24px 9px 0px 9px;
+  flex-shrink: 0;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, 0.05);
+}
+.sites {
   display: flex;
-  align-items: baseline;
-  padding-top: 43px;
-  padding-bottom: 82px;
+  gap: 11px;
 }
-.navs {
+.site {
+  border-radius: 10px;
+  box-shadow: 0px 0px 9px 4px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+.name-button {
   display: flex;
-  gap: 33px;
+  align-items: center;
+  padding-left: 35px;
+  padding-right: 22px;
 }
-.nav {
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: 0.16px;
-  position: relative;
+.work-name {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 146.3%; /* 35.112px */
+  margin-right: auto;
+  text-transform: capitalize;
 }
+.work-button {
+  border-radius: 100px;
+  border: 1px solid #343434;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 146.3%; /* 20.482px */
+  width: 92px;
+  height: 23px;
+  background-color: transparent;
+  text-transform: capitalize;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick-theme.css"/>
+</head>
+<body>
 
-.nav:hover,
-.nav:focus {
-  font-weight: 600;
-}
-
-.nav:hover::after,
-.nav:focus::after {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  content: "";
-  display: inline-block;
-  width: 21px;
-  height: 2px;
-  background-color: var(--accent-color);
-}
-  </style>
-<header>
-  <div class="container header-block">
-    <ul class="navs">
-      <li class="nav">Home</li>
-      <li class="nav">About Us</li>
-      <li class="nav">Services</li>
-      <li class="nav">Contact Us</li>
+<!-- <div class="works autoplay">
+  <div class="work">
+    <ul class="sites">
+      <li class="site">
+        <img
+          src="./images/big-screen1-min.png"
+          srcset="
+            ./images/big-screen1-min.png   1x,
+            ./images/big-screen1@2-min.png 2x
+          "
+          alt=""
+        />
+      </li>
+      <li class="site">
+        <img
+          src="./images/small-screen1-min.png"
+          srcset="
+            ./images/small-screen1-min.png   1x,
+            ./images/small-screen1@2-min.png 2x
+          "
+          alt=""
+        />
+      </li>
     </ul>
+    <div class="name-button">
+      <h3 class="work-name">UI soap</h3>
+      <button class="work-button">View work</button>
+    </div>
   </div>
-</header>
+  <div class="work">
+    <ul class="sites">
+      <li class="site">
+        <img
+          src="./images/big-screen1-min.png"
+          srcset="
+            ./images/big-screen1-min.png   1x,
+            ./images/big-screen1@2-min.png 2x
+          "
+          alt=""
+        />
+      </li>
+      <li class="site">
+        <img
+          src="./images/small-screen1-min.png"
+          srcset="
+            ./images/small-screen1-min.png   1x,
+            ./images/small-screen1@2-min.png 2x
+          "
+          alt=""
+        />
+      </li>
+    </ul>
+    <div class="name-button">
+      <h3 class="work-name">UI soap</h3>
+      <button class="work-button">View work</button>
+    </div>
+  </div>
+  <div class="work">
+    <ul class="sites">
+      <li class="site">
+        <img
+          src="./images/big-screen1-min.png"
+          srcset="
+            ./images/big-screen1-min.png   1x,
+            ./images/big-screen1@2-min.png 2x
+          "
+          alt=""
+        />
+      </li>
+      <li class="site">
+        <img
+          src="./images/small-screen1-min.png"
+          srcset="
+            ./images/small-screen1-min.png   1x,
+            ./images/small-screen1@2-min.png 2x
+          "
+          alt=""
+        />
+      </li>
+    </ul>
+    <div class="name-button">
+      <h3 class="work-name">UI soap</h3>
+      <button class="work-button">View work</button>
+    </div>
+  </div>
+  <div class="work">
+    <ul class="sites">
+      <li class="site">
+        <img
+          src="./images/big-screen1-min.png"
+          srcset="
+            ./images/big-screen1-min.png   1x,
+            ./images/big-screen1@2-min.png 2x
+          "
+          alt=""
+        />
+      </li>
+      <li class="site">
+        <img
+          src="./images/small-screen1-min.png"
+          srcset="
+            ./images/small-screen1-min.png   1x,
+            ./images/small-screen1@2-min.png 2x
+          "
+          alt=""
+        />
+      </li>
+    </ul>
+    <div class="name-button">
+      <h3 class="work-name">UI soap</h3>
+      <button class="work-button">View work</button>
+    </div>
+  </div>
+  <div class="work">
+    <ul class="sites">
+      <li class="site">
+        <img
+          src="./images/big-screen1-min.png"
+          srcset="
+            ./images/big-screen1-min.png   1x,
+            ./images/big-screen1@2-min.png 2x
+          "
+          alt=""
+        />
+      </li>
+      <li class="site">
+        <img
+          src="./images/small-screen1-min.png"
+          srcset="
+            ./images/small-screen1-min.png   1x,
+            ./images/small-screen1@2-min.png 2x
+          "
+          alt=""
+        />
+      </li>
+    </ul>
+    <div class="name-button">
+      <h3 class="work-name">UI soap</h3>
+      <button class="work-button">View work</button>
+    </div>
+  </div>
+</div> -->
+
+
+<div class="autoplay">
+  <div><img src="./images/big-screen1-min.png" alt=""></div>
+  <div><img src="./images/big-screen1-min.png" alt=""></div>
+  <div><img src="./images/big-screen1-min.png" alt=""></div><div><img src="./images/big-screen1-min.png" alt=""></div>
+  <div><img src="./images/big-screen1-min.png" alt=""></div>
+  <div><img src="./images/big-screen1-min.png" alt=""></div><div><img src="./images/big-screen1-min.png" alt=""></div>
+  <div><img src="./images/big-screen1-min.png" alt=""></div>
+  <div><img src="./images/big-screen1-min.png" alt=""></div>
+</div>
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="./slick-1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="./main.js"></script>
+</body>
+</html>
