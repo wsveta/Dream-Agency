@@ -1,0 +1,48 @@
+  <style>
+ .container {
+  padding: 0 50px;
+}
+.header-block {
+  display: flex;
+  align-items: baseline;
+  padding-top: 43px;
+  padding-bottom: 82px;
+}
+.navs {
+  display: flex;
+  gap: 33px;
+}
+.nav {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.16px;
+  position: relative;
+}
+
+.nav:hover,
+.nav:focus {
+  font-weight: 600;
+}
+
+.nav:hover::after,
+.nav:focus::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: "";
+  display: inline-block;
+  width: 21px;
+  height: 2px;
+  background-color: var(--accent-color);
+}
+  </style>
+<header>
+  <div class="container header-block">
+    <ul class="navs">
+      <li class="nav">Home</li>
+      <li class="nav">About Us</li>
+      <li class="nav">Services</li>
+      <li class="nav">Contact Us</li>
+    </ul>
+  </div>
+</header>
